@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import EncontrarMotorista from "./pages/EncontrarMotorista";
 import VirarMotorista from "./pages/VirarMotorista";
+import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/encontrar-motorista" element={<EncontrarMotorista />} />
           <Route path="/virar-motorista" element={<VirarMotorista />} />
+          <Route path="/perfil" element={<Profile />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
