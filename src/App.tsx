@@ -8,6 +8,8 @@ import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import EncontrarMotorista from "./pages/EncontrarMotorista";
 import VirarMotorista from "./pages/VirarMotorista";
+import Notificacoes from "./pages/Notificacoes";
+import RastreioCorrida from "./pages/RastreioCorrida";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/cadastro" element={<Cadastro />} />
           <Route path="/encontrar-motorista" element={<EncontrarMotorista />} />
           <Route path="/virar-motorista" element={<VirarMotorista />} />
+          <Route path="/notificacoes" element={<Notificacoes />} />
+          <Route path="/ridetracking" element={<RastreioCorrida />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
